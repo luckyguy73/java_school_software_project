@@ -1,1 +1,2 @@
-# java_school_software_project
+# Java Scheduling Appointment App created for Software II course
+
