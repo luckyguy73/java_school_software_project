@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="325.0" styleClass="back-white" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gci.controllers.dialogs.LoginController">
+   <children>
+      <HBox alignment="CENTER" layoutX="69.0" layoutY="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="back-dark-blue" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="158.0" fitWidth="263.0">
+               <image>
+                  <Image url="@../../assets/images/logo%20200.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="117.0" layoutY="172.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="usernameTextField" promptText="Username" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="117.0" layoutY="212.0" spacing="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/images/lock.png" />
+               </image>
+            </ImageView>
+            <StackPane>
+               <children>
+                  <TextField fx:id="visiblePasswordTextField" promptText="Password" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" visible="false" />
+                  <PasswordField fx:id="passwordField" promptText="Password" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" />
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="117.0" layoutY="253.5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <CheckBox fx:id="showPasswordCheckBox" mnemonicParsing="false" styleClass="fill-dark-blue" text="Show Password" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="163.0" layoutY="291.0" prefHeight="32.0" prefWidth="236.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="login" defaultButton="true" mnemonicParsing="false" onAction="#handleLoginButton" text="Login">
+               <font>
+                  <Font name="Copperplate" size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="back-dark-blue" />
+                  <String fx:value="fill-white" />
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-light-blue" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="7.0" layoutY="329.0" prefHeight="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="copyrightLabel" alignment="CENTER" prefHeight="17.0" prefWidth="393.0" text="Copyright © 2019 Global Consulting Institution">
+               <styleClass>
+                  <String fx:value="fill-white" />
+                  <String fx:value="fn-14" />
+               </styleClass>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="back-orange" />
+            <String fx:value="fill-white" />
+         </styleClass>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../assets/stylesheets/app.css" />
+      <URL value="@../../assets/stylesheets/dialogs/login.css" />
+   </stylesheets>
+</AnchorPane>

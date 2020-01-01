@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="650.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gci.controllers.dialogs.AddAppointmentController">
+   <children>
+      <VBox alignment="CENTER" layoutX="71.0" layoutY="14.0" prefHeight="55.0" prefWidth="325.0" styleClass="back-dark-blue" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="addTitle" fx:id="titleLabel" text="Add Appointment">
+               <styleClass>
+                  <String fx:value="Montserrat-36" />
+                  <String fx:value="fill-white" />
+               </styleClass></Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="7.0" layoutY="365.0" prefHeight="29.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="copyrightLabel" alignment="CENTER" prefHeight="17.0" prefWidth="393.0" text="Copyright © 2019 Global Consulting Institution">
+               <styleClass>
+                  <String fx:value="fill-white" />
+                  <String fx:value="fn-14" />
+               </styleClass>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="back-orange" />
+            <String fx:value="fill-white" />
+         </styleClass>
+      </HBox>
+      <SplitPane dividerPositions="0.5" layoutX="353.0" layoutY="122.0" prefHeight="160.0" prefWidth="200.0" styleClass="back-white" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="21.0" text="Customer Name" AnchorPane.leftAnchor="54.0">
+                     <styleClass>
+                        <String fx:value="Montserrat-16" />
+                        <String fx:value="fill-dark-blue" />
+                     </styleClass></Label>
+                  <ChoiceBox fx:id="nameChoiceBox" layoutX="50.0" layoutY="42.0" prefHeight="33.0" prefWidth="213.0" AnchorPane.leftAnchor="54.0" />
+                  <Label layoutX="52.0" layoutY="87.0" text="Appointment Type" AnchorPane.leftAnchor="54.0">
+                     <styleClass>
+                        <String fx:value="Montserrat-16" />
+                        <String fx:value="fill-dark-blue" />
+                     </styleClass></Label>
+                  <ChoiceBox fx:id="typeChoiceBox" layoutX="52.0" layoutY="108.0" prefHeight="33.0" prefWidth="213.0" AnchorPane.leftAnchor="54.0" />
+                  <Label layoutX="54.0" layoutY="157.0" text="Location Details" AnchorPane.leftAnchor="54.0">
+                     <styleClass>
+                        <String fx:value="Montserrat-16" />
+                        <String fx:value="fill-dark-blue" />
+                     </styleClass></Label>
+                  <TextArea fx:id="locationTextArea" layoutX="54.0" layoutY="178.0" prefHeight="64.0" prefWidth="213.0" promptText="Enter the physical address, phone number, or meeting web address." styleClass="back-dark-grey" AnchorPane.leftAnchor="54.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane>
+               <children>
+                  <DatePicker fx:id="datePicker" layoutX="63.0" layoutY="43.0" onAction="#findAvailableTimes" />
+                  <Label layoutX="63.0" layoutY="22.0" text="Select Date then Time">
+                     <styleClass>
+                        <String fx:value="Montserrat-16" />
+                        <String fx:value="fill-dark-blue" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="timeLabel" layoutX="63.0" layoutY="89.0" text="Available Times">
+                     <styleClass>
+                        <String fx:value="Montserrat-16" />
+                        <String fx:value="fill-dark-blue" />
+                     </styleClass>
+                  </Label>
+                  <ChoiceBox fx:id="timeChoiceBox" layoutX="63.0" layoutY="110.0" prefHeight="33.0" prefWidth="194.0" />
+                  <HBox alignment="CENTER" layoutX="68.0" layoutY="191.0" spacing="25.0" styleClass="back-white">
+                     <children>
+                        <Button fx:id="saveButton" defaultButton="true" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSaveButton" prefWidth="80.0" text="Save">
+                           <styleClass>
+                              <String fx:value="back-dark-blue" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="hover-hand" />
+                              <String fx:value="hover-light-blue" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="cancelButton" cancelButton="true" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCancelButton" prefWidth="80.0" text="Cancel">
+                           <styleClass>
+                              <String fx:value="back-dark-blue" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="hover-hand" />
+                              <String fx:value="hover-light-blue" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../assets/stylesheets/app.css" />
+      <URL value="@../../assets/stylesheets/dialogs/add_appointment.css" />
+   </stylesheets>
+</AnchorPane>

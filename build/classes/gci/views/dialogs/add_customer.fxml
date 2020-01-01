@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="497.0" prefWidth="400.0" styleClass="back-white" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gci.controllers.dialogs.AddCustomerController">
+   <children>
+      <GridPane layoutY="60.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="370.0" prefWidth="300.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="60.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="110.0" />
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label layoutX="10.0" layoutY="72.0" text="Name">
+               <styleClass>
+                  <String fx:value="Montserrat-16" />
+                  <String fx:value="fill-dark-blue" />
+               </styleClass></Label>
+            <Label layoutX="10.0" layoutY="119.0" text="Phone" GridPane.rowIndex="1">
+               <styleClass>
+                  <String fx:value="Montserrat-16" />
+                  <String fx:value="fill-dark-blue" />
+               </styleClass></Label>
+            <Label layoutX="10.0" layoutY="166.0" text="Address" GridPane.rowIndex="2">
+               <styleClass>
+                  <String fx:value="Montserrat-16" />
+                  <String fx:value="fill-dark-blue" />
+               </styleClass></Label>
+            <Label layoutX="10.0" layoutY="213.0" text="City" GridPane.rowIndex="3">
+               <styleClass>
+                  <String fx:value="Montserrat-16" />
+                  <String fx:value="fill-dark-blue" />
+               </styleClass></Label>
+            <Label layoutX="10.0" layoutY="260.0" text="Postal Code" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="Montserrat-16" />
+                  <String fx:value="fill-dark-blue" />
+               </styleClass></Label>
+            <Label layoutX="10.0" layoutY="307.0" text="Country" GridPane.rowIndex="5">
+               <styleClass>
+                  <String fx:value="Montserrat-16" />
+                  <String fx:value="fill-dark-blue" />
+               </styleClass></Label>
+            <TextField fx:id="nameTextField" layoutX="185.0" layoutY="60.0" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" GridPane.columnIndex="1" />
+            <TextField fx:id="phoneTextField" layoutX="185.0" layoutY="102.0" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="addressTextField" layoutX="185.0" layoutY="144.0" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cityTextField" layoutX="185.0" layoutY="186.0" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="postalTextField" layoutX="185.0" layoutY="228.0" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="countryTextField" layoutX="185.0" layoutY="269.0" style="-fx-prompt-text-fill: #88B3D9;" styleClass="back-light-blue" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <HBox alignment="CENTER" spacing="25.0" styleClass="back-white" GridPane.columnSpan="2" GridPane.rowIndex="6">
+               <children>
+                  <Button fx:id="saveButton" defaultButton="true" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSaveButton" prefWidth="80.0" text="Save">
+                     <styleClass>
+                        <String fx:value="back-dark-blue" />
+                        <String fx:value="fill-white" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="hover-light-blue" />
+                     </styleClass></Button>
+                  <Button fx:id="cancelButton" cancelButton="true" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleCancelButton" prefWidth="80.0" text="Cancel">
+                     <styleClass>
+                        <String fx:value="back-dark-blue" />
+                        <String fx:value="fill-white" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="hover-light-blue" />
+                     </styleClass></Button>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" layoutX="-2.0" layoutY="-7.0" prefHeight="66.0" prefWidth="400.0" styleClass="back-dark-blue" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="addTitle" fx:id="titleLabel" text="Add Customer">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="Montserrat-36" />
+                  <String fx:value="fill-white" />
+               </styleClass>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="469.0" prefHeight="29.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="copyrightLabel" alignment="CENTER" prefHeight="17.0" prefWidth="393.0" text="Copyright © 2019 Global Consulting Institution">
+               <styleClass>
+                  <String fx:value="fill-white" />
+                  <String fx:value="fn-14" />
+               </styleClass>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="back-orange" />
+            <String fx:value="fill-white" />
+         </styleClass>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../../assets/stylesheets/app.css" />
+      <URL value="@../../assets/stylesheets/dialogs/add_customer.css" />
+   </stylesheets>
+</AnchorPane>

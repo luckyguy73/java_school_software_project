@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+  <entry key="rdbms">mysql</entry>
+  <entry key="url">jdbc:mysql://52.206.157.109:3306/U069Sq</entry>
+  <entry key="driver">com.mysql.cj.jdbc.Driver</entry>
+  <entry key="hostname">52.206.157.109</entry>
+  <entry key="port">3306</entry>
+  <entry key="user">U069Sq</entry>
+  <entry key="password">53688703915</entry>
+  <entry key="dbName">U069Sq</entry>
+
+</properties>

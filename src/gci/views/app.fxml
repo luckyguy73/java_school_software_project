@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="border_pane" prefHeight="700.0" prefWidth="1200.0" styleClass="back-white" stylesheets="@../assets/stylesheets/app.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gci.controllers.AppController">
+   <center>
+      <VBox alignment="CENTER" styleClass="back-white" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/logo%20200.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+   </center>
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox styleClass="back-dark-blue">
+               <children>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/images/logo%20200.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="210.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#showAppointments" text="Appointments" VBox.vgrow="ALWAYS">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                              <String fx:value="hover-light-blue" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/appt.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="hover-light-blue" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="675.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#showCalendar" text="Calendar" VBox.vgrow="ALWAYS">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                              <String fx:value="hover-light-blue" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/calendar.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="hover-light-blue" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#showCustomers" text="Customers" VBox.vgrow="ALWAYS">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                              <String fx:value="hover-light-blue" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/customers.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="hover-light-blue" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="675.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#showReports" text="Reports">
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fill-white" />
+                              <String fx:value="fn-18" />
+                              <String fx:value="hover-hand" />
+                              <String fx:value="hover-light-blue" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/images/report.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="hover-hand" />
+                        <String fx:value="hover-light-blue" />
+                     </styleClass>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="copyrightLabel" alignment="CENTER" prefHeight="17.0" prefWidth="393.0" text="Copyright © 2019 Global Consulting Institution">
+               <styleClass>
+                  <String fx:value="fill-white" />
+                  <String fx:value="fn-14" />
+               </styleClass>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="back-orange" />
+            <String fx:value="fill-white" />
+         </styleClass>
+      </HBox>
+   </bottom>
+</BorderPane>
